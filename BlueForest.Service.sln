@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlueForest.Service", "src\BlueForest.Service.csproj", "{9E379AFA-E92C-4A97-8A1B-64DD3C7922E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E379AFA-E92C-4A97-8A1B-64DD3C7922E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E379AFA-E92C-4A97-8A1B-64DD3C7922E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E379AFA-E92C-4A97-8A1B-64DD3C7922E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E379AFA-E92C-4A97-8A1B-64DD3C7922E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {18D57075-D2BC-4E2D-911C-DB1AC78129F6}
+	EndGlobalSection
+EndGlobal

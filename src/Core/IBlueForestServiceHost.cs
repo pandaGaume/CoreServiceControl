@@ -15,5 +15,6 @@ namespace BlueForest.Service
         ValueTask OnPausingAsync(IBlueForestServiceController controller);
         ValueTask OnPausedAsync(IBlueForestServiceController controller);
         ValueTask OnCompleteAsync(IBlueForestServiceController controller);
+        ValueTask OnCompletedAsync(IBlueForestServiceController controller);
     }
 }

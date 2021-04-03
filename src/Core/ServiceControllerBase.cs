@@ -28,8 +28,11 @@ namespace BlueForest.Service
                 var old = Status;
                 try
                 {
+                    this.ValidateFlow(BlueForestServiceStatus.complete);
+                    SetStatus(BlueForestServiceStatus.complete);
                     this.ValidateFlow(BlueForestServiceStatus.completed);
                     await _hostedService.OnCompleteAsync(this);
+                    await _hostedService.OnCompletedAsync(this);
                     SetStatus(BlueForestServiceStatus.completed);
                     return new ServiceControlResult(ServiceControlResultCode.Success, old, Status);
                 }

@@ -13,6 +13,7 @@ namespace BlueForest.Service
         stopped,
         pausing,
         paused,
+        complete,
         completed
     }
 

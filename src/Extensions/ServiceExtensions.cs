@@ -8,15 +8,16 @@ namespace BlueForest.Service
     public static class ServiceExtensions
     {
         internal static bool[][] flowValidationMatrix = {
-            //          idle , starting, started, stopping, stopped, pausing, paused, completed
-            new bool[]{ true , true    , false  , false   , false  , false  , false , true       },//idle
-            new bool[]{ true , true    , true   , false   , false  , false  , false , false      },//starting
-            new bool[]{ false, false   , true   , true    , false  , true   , false , false      },//started
-            new bool[]{ true , false   , false  , true    , true   , false  , false , false      },//stopping
-            new bool[]{ false, true    , false  , false   , true   , false  , false , false      },//stopped
-            new bool[]{ true , false   , false  , false   , false  , true   , true  , false      },//pausing
-            new bool[]{ false, true    , false  , true    , false  , false  , true  , false      },//paused
-            new bool[]{ false, false   , false  , false   , false  , false  , false , true       },//completed
+            //          idle , starting, started, stopping, stopped, pausing, paused, complete, completed
+            new bool[]{ true , true    , false  , false   , false  , false  , false , true    , false       },//idle
+            new bool[]{ true , true    , true   , false   , false  , false  , false , false   , false      },//starting
+            new bool[]{ false, false   , true   , true    , false  , true   , false , false   , false      },//started
+            new bool[]{ true , false   , false  , true    , true   , false  , false , false   , false      },//stopping
+            new bool[]{ false, true    , false  , false   , true   , false  , false , false   , false      },//stopped
+            new bool[]{ true , false   , false  , false   , false  , true   , true  , false   , false      },//pausing
+            new bool[]{ false, true    , false  , true    , false  , false  , true  , false   , false      },//paused
+            new bool[]{ false, false   , false  , false   , false  , false  , false , true    , true       },//complete
+            new bool[]{ false, false   , false  , false   , false  , false  , false , false   , true       },//completed
         };
 
         internal static ConcurrentDictionary<Type, ServiceControlResultCode> codes = new ConcurrentDictionary<Type, ServiceControlResultCode>(
